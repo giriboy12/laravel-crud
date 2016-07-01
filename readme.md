@@ -2,6 +2,8 @@
 
 #to do this #
 
-*create miration
-*create model 
-*create cotroller
+* create miration
+
+* create model 
+
+* create cotroller
