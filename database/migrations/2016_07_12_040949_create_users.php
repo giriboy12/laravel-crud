@@ -7,7 +7,7 @@ class CreateUsers extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *.
      * @return void
      */
     public function up()
@@ -23,8 +23,6 @@ class CreateUsers extends Migration
             $table->rememberToken();
             $table->integer('role_id')->unsigned();
             $table->foreign('role_id')->references('id')->on('roles')->onUpdate('cascade')->onDelete('cascade');
-
-
             $table->timestamps();
         });
     }

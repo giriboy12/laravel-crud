@@ -24,7 +24,7 @@ class CreateRoles extends Migration
      *
      * @return void
      */
-g    public function down()
+    public function down()
     {
         Schema::drop('roles');
     }
