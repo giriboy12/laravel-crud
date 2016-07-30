@@ -1,4 +1,4 @@
-<?php
+--<?php
 
 use Illuminate\Database\Seeder;
 
@@ -17,15 +17,20 @@ class Roleseeder extends Seeder
             'member'
         ];
 
-        foreach($roles as $role) {
+        foreach( $roles as $role) {
 
-            \Apps\Models\Role::create
-                [
+            \Apps\Models\Role::create{[
+                'name' => $role
+                    ]}
+
+            }
+        {[
                     'name'=> $role
 
 
 
-            ];
+            ]}
+        ;
 
 
 

@@ -3,6 +3,7 @@
 namespace App\models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use phpDocumentor\Reflection\DocBlock\Tags\Return_;
 
 class User extends Authenticatable
 {
@@ -23,4 +24,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+ function role()
+      Return $this->belongsTo(role::class);
+}
 }
